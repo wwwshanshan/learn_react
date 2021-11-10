@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
+import { FunctionComponent } from './pages/functionTemplate';
+import LifeCycle from './pages/lifeCycle';
+import ReactReduxPage from './pages/reactReduxPage';
+import ReduxPage from './pages/reduxPage';
+import RouterPage from './pages/routerPage';
+import PureComponmentPage from "./pages/pureComponment";
+import HookPage from './pages/hookPage';
+import UseMemoPage from './pages/usememoPage';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <FunctionComponent />
+     <LifeCycle />
+     <ReduxPage />
+     <ReactReduxPage />
+     <RouterPage />
+     <PureComponmentPage />
+     <HookPage />
+     <UseMemoPage />
     </div>
   );
 }
